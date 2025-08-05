@@ -15,6 +15,11 @@ function arrayStats(numbers) {
     const average = numbers.reduce((acc, cur)=> acc + cur, 0) / numbers.length;
     const min = Math.min(...numbers);
     const max = Math.max(...numbers);
-    
+    return{
+        sum,
+        average,
+        min,
+        max
+    }
 }
 console.log(arrayStats([1,4,5,6]))
