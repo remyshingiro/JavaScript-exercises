@@ -8,4 +8,12 @@ const sortProducts = (arr) => {
     return arr.sort((a, b) => a.price - b.price)
 };
 
+const products = [
+  { name: "Apple", price: 30 },
+  { name: "Banana", price: 10 },
+  { name: "Orange", price: 20 }
+];
+
+console.log(sortProducts(products))
+
 
