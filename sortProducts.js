@@ -4,6 +4,8 @@
 // called sortProducts that sorts the products based on their
 //  prices in ascending order. 
 
-const sortProducts = () => {
-    
-}
+const sortProducts = (arr) => {
+    return arr.sort((a, b) => a.price - b.price)
+};
+
+
