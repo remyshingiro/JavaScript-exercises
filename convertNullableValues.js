@@ -8,12 +8,18 @@
 
 const convertNullableValues = (obj) => {
     for(let key in obj) {
-        if(obj[key] == null) {
-            return 0;
-        } else if (obj[key] == undefined) {
-            return '';
-        } else {
-            return obj[key];
+        if(obj[key] === null) {
+            obj[key] = 0;
+        } else if (obj[key] === undefined) {
+            obj[key] = '';
         }
     }
+    return obj
 }
+
+const ourObj = {
+    name: "name",
+    age: null,
+    position: undefined,
+}
+console.log(convertNullableValues(ourObj))
