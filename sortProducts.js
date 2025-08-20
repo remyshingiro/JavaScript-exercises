@@ -9,8 +9,8 @@ const sortProducts = (arr) => {
 };
 
 const products = [
-  { name: "Apple", price: 30 },
-  { name: "Banana", price: 10 },
+  { name: "Biscuits", price: 3 },
+  { name: "Banana", price: 106 },
   { name: "Orange", price: 20 }
 ];
 
